@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZacPet | Productos para mascotas con cariño · Valencia</title>
+    <meta name="description" content="ZacPet — accesorios y productos para perros y gatos, diseñados con cariño en Valencia. Para las mascotas que son familia.">
+    <meta name="keywords" content="productos mascotas, accesorios perros, accesorios gatos, marca mascotas Valencia, ZacPet, juguetes mascotas, regalos mascotas">
+    <meta name="author" content="ZacPet">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zacpet.com/">
+    <link rel="alternate" hreflang="es" href="https://zacpet.com/">
+    <link rel="alternate" hreflang="en" href="https://zacpet.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://zacpet.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ZacPet | Productos para mascotas con cariño">
+    <meta property="og:description" content="Accesorios y productos para perros y gatos, diseñados con cariño en Valencia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zacpet.com/">
+    <meta property="og:image" content="https://zacpet.com/images/hero-pet.jpg">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZacPet | Productos para mascotas con cariño">
+    <meta name="twitter:description" content="Accesorios y productos para perros y gatos, diseñados con cariño en Valencia.">
+    <meta name="twitter:image" content="https://zacpet.com/images/hero-pet.jpg">
+
+    <!-- Favicon (replace with real logo later) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23FF7A59'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='800'%3E🐾%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --coral: #FF7A59;
+            --coral-dark: #E85A38;
+            --coral-light: #FFAA92;
+            --teal: #3DB5A6;
+            --teal-dark: #2A8A7E;
+            --teal-light: #A8E1D9;
+            --sunny: #FFC857;
+            --sunny-dark: #F0AD2C;
+            --pink: #FFB8C5;
+            --cream: #FFF8F0;
+            --cream-warm: #FFF1E0;
+            --text-dark: #2D3436;
+            --text-medium: #555B5E;
+            --text-light: #888E91;
+            --white: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+            --shadow: 0 8px 30px rgba(255,122,89,0.12);
+            --shadow-hover: 0 16px 40px rgba(255,122,89,0.20);
+            --shadow-teal: 0 8px 30px rgba(61,181,166,0.18);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text-dark);
+            background: var(--cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Fraunces', serif;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============ HEADER ============ */
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            background: rgba(255, 248, 240, 0.92);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+            transition: var(--transition);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .logo-mark {
+            width: 38px; height: 38px;
+            background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(255,122,89,0.35);
+        }
+
+        .logo-text span { color: var(--coral); }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        nav a {
+            padding: 8px 16px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            border-radius: 50px;
+            transition: var(--transition);
+        }
+
+        nav a:hover { color: var(--coral); }
+
+        nav a.cta-btn {
+            background: var(--text-dark);
+            color: var(--white);
+            font-weight: 700;
+            padding: 10px 22px;
+            border-radius: 50px;
+            margin-left: 4px;
+        }
+
+        nav a.cta-btn:hover {
+            background: var(--coral);
+            color: var(--white);
+            transform: translateY(-1px);
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: var(--white);
+            border: 2px solid rgba(0,0,0,0.06);
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--text-medium);
+            transition: var(--transition);
+            margin-left: 8px;
+            letter-spacing: 0.05em;
+        }
+
+        .lang-switch:hover {
+            border-color: var(--coral);
+            color: var(--coral);
+            transform: translateY(-1px);
+        }
+
+        .lang-switch svg {
+            border-radius: 2px;
+            box-shadow: 0 0 1px rgba(0,0,0,0.3);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none; border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--text-dark);
+            padding: 6px;
+        }
+
+        /* ============ HERO ============ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(ellipse at top right, rgba(255,200,87,0.20) 0%, transparent 55%),
+                radial-gradient(ellipse at bottom left, rgba(61,181,166,0.18) 0%, transparent 55%),
+                var(--cream);
+            overflow: hidden;
+            padding: 110px 0 60px;
+        }
+
+        .hero-blob-1, .hero-blob-2, .hero-blob-3 {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 0;
+            opacity: 0.4;
+        }
+
+        .hero-blob-1 {
+            top: 10%; right: -8%;
+            width: 380px; height: 380px;
+            background: var(--coral-light);
+        }
+
+        .hero-blob-2 {
+            bottom: -10%; left: -5%;
+            width: 320px; height: 320px;
+            background: var(--teal-light);
+        }
+
+        .hero-blob-3 {
+            top: 50%; left: 40%;
+            width: 220px; height: 220px;
+            background: var(--sunny);
+            opacity: 0.25;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1.05fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 800;
+            color: var(--coral);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .hero-badge .dot {
+            width: 8px; height: 8px;
+            background: var(--coral);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.6rem, 5vw, 4.2rem);
+            line-height: 1.05;
+            margin-bottom: 22px;
+            color: var(--text-dark);
+        }
+
+        .hero h1 .squiggle {
+            position: relative;
+            color: var(--coral);
+            display: inline-block;
+        }
+
+        .hero h1 .squiggle::after {
+            content: '';
+            position: absolute;
+            bottom: -6px; left: 0; right: 0;
+            height: 14px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q 25 0 50 7 T 100 7 T 150 7 T 200 7' stroke='%23FFC857' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+            background-size: 100px 14px;
+        }
+
+        .hero p {
+            font-size: 1.18rem;
+            color: var(--text-medium);
+            margin-bottom: 36px;
+            max-width: 540px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--coral);
+            color: var(--white);
+            box-shadow: 0 8px 20px rgba(255,122,89,0.35);
+        }
+
+        .btn-primary:hover {
+            background: var(--coral-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(255,122,89,0.45);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-dark);
+            border: 2px solid var(--text-dark);
+        }
+
+        .btn-outline:hover {
+            background: var(--text-dark);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--coral) 0%, var(--sunny) 100%);
+            border-radius: 50% 40% 55% 45% / 45% 55% 45% 55%;
+            transform: rotate(-3deg);
+            z-index: 0;
+            opacity: 0.95;
+            animation: morph 14s ease-in-out infinite;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 50% 40% 55% 45% / 45% 55% 45% 55%; }
+            50% { border-radius: 40% 55% 45% 55% / 55% 45% 55% 45%; }
+        }
+
+        .hero-image-wrap img {
+            position: relative;
+            z-index: 1;
+            width: 95%;
+            max-width: 480px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 50% 40% 55% 45% / 45% 55% 45% 55%;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.18);
+            animation: morph 14s ease-in-out infinite;
+        }
+
+        .floating-tag {
+            position: absolute;
+            background: var(--white);
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.88rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 2;
+        }
+
+        .floating-tag.tag-1 {
+            top: 8%; left: -5%;
+            color: var(--teal-dark);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-tag.tag-2 {
+            bottom: 12%; right: -3%;
+            color: var(--coral-dark);
+            animation: float 6s ease-in-out infinite 1.5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* ============ PROMISE ============ */
+        .promise {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--coral);
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            line-height: 1.15;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-header .section-subtitle { margin: 0 auto; }
+
+        .promise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .promise-card {
+            background: var(--white);
+            padding: 40px 32px;
+            border-radius: var(--radius);
+            text-align: left;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .promise-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .promise-card .p-icon {
+            width: 64px; height: 64px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 22px;
+        }
+
+        .promise-card.c-1 .p-icon { background: linear-gradient(135deg, var(--coral-light), var(--coral)); }
+        .promise-card.c-2 .p-icon { background: linear-gradient(135deg, var(--teal-light), var(--teal)); }
+        .promise-card.c-3 .p-icon { background: linear-gradient(135deg, var(--sunny), var(--sunny-dark)); }
+
+        .promise-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .promise-card p {
+            font-size: 0.98rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        /* ============ STORY ============ */
+        .story {
+            background: linear-gradient(135deg, var(--cream-warm) 0%, var(--cream) 100%);
+            padding: 100px 0;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .story-image {
+            position: relative;
+        }
+
+        .story-image img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-teal);
+        }
+
+        .story-image::before {
+            content: '';
+            position: absolute;
+            top: 20px; left: 20px;
+            width: 100%; height: 100%;
+            background: var(--teal);
+            border-radius: var(--radius);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .story-image .floating-tag {
+            position: absolute;
+            top: 20px; right: -20px;
+        }
+
+        .story-content h2 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            line-height: 1.15;
+            color: var(--text-dark);
+            margin-bottom: 22px;
+        }
+
+        .story-content h2 em {
+            font-style: italic;
+            color: var(--coral);
+        }
+
+        .story-content p {
+            font-size: 1.08rem;
+            color: var(--text-medium);
+            margin-bottom: 18px;
+            line-height: 1.85;
+        }
+
+        .story-content .signature {
+            font-family: 'Fraunces', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--coral);
+            margin-top: 24px;
+        }
+
+        /* ============ COLLECTION ============ */
+        .collection {
+            padding: 100px 0;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .product-card .p-image {
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card .p-image img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .p-image img {
+            transform: scale(1.05);
+        }
+
+        .product-card.bg-1 .p-image { background: linear-gradient(135deg, #FFE5DD, #FFCFC0); }
+        .product-card.bg-2 .p-image { background: linear-gradient(135deg, #D9F0EC, #B5E1D9); }
+        .product-card.bg-3 .p-image { background: linear-gradient(135deg, #FFEAB8, #FFD27A); }
+
+        .soon-badge {
+            position: absolute;
+            top: 16px; right: 16px;
+            background: var(--text-dark);
+            color: var(--white);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 6px 14px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            z-index: 2;
+        }
+
+        .product-card .p-body {
+            padding: 26px 28px 30px;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* ============ FUNNY GALLERY ============ */
+        .gallery {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(255,122,89,0.18) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .gallery .container { position: relative; z-index: 2; }
+
+        .gallery .section-label { color: var(--sunny); }
+
+        .gallery .section-title {
+            color: var(--white);
+        }
+
+        .gallery .section-title em {
+            font-style: italic;
+            color: var(--coral-light);
+        }
+
+        .gallery .section-subtitle {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 24px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            color: var(--white);
+            font-family: 'Fraunces', serif;
+            font-style: italic;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        /* ============ NEWSLETTER ============ */
+        .newsletter {
+            padding: 100px 0;
+            background: var(--cream);
+        }
+
+        .newsletter-card {
+            background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+            border-radius: var(--radius);
+            padding: 70px 40px;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter-card::before, .newsletter-card::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .newsletter-card::before {
+            top: -80px; right: -80px;
+            width: 250px; height: 250px;
+        }
+
+        .newsletter-card::after {
+            bottom: -60px; left: -60px;
+            width: 180px; height: 180px;
+        }
+
+        .newsletter-card h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            margin-bottom: 14px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .newsletter-card p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            max-width: 480px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            min-width: 220px;
+            padding: 16px 22px;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            background: var(--white);
+            color: var(--text-dark);
+        }
+
+        .newsletter-form input:focus {
+            outline: 3px solid var(--sunny);
+        }
+
+        .newsletter-form button {
+            padding: 16px 32px;
+            border: none;
+            border-radius: 50px;
+            background: var(--text-dark);
+            color: var(--white);
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-form button:hover {
+            background: var(--white);
+            color: var(--coral);
+            transform: translateY(-2px);
+        }
+
+        /* ============ CONTACT ============ */
+        .contact {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: clamp(2rem, 4vw, 2.6rem);
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .contact-info > p {
+            font-size: 1.08rem;
+            color: var(--text-medium);
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .contact-method .m-icon {
+            flex-shrink: 0;
+            width: 56px; height: 56px;
+            background: var(--cream-warm);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .contact-method strong {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 4px;
+        }
+
+        .contact-method a, .contact-method span {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .contact-method a:hover { color: var(--coral); }
+
+        .socials {
+            display: flex;
+            gap: 12px;
+            margin-top: 32px;
+        }
+
+        .socials a {
+            width: 48px; height: 48px;
+            background: var(--cream-warm);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .socials a:hover {
+            background: var(--coral);
+            transform: translateY(-3px);
+        }
+
+        .socials a:hover svg { fill: var(--white); }
+
+        .socials svg {
+            width: 22px; height: 22px;
+            fill: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .map-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            min-height: 400px;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: var(--text-dark);
+            color: rgba(255,255,255,0.75);
+            padding: 50px 0 30px;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 24px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        .footer-tagline {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.6);
+            font-style: italic;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.55);
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            text-align: center;
+        }
+        .footer-grid {
+            justify-content: center !important;
+            text-align: center;
+        }
+
+        .footer-bottom a {
+            color: rgba(255,255,255,0.75);
+            transition: var(--transition);
+        }
+
+        .footer-bottom a:hover { color: var(--coral-light); }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1024px) {
+            .hero .container { gap: 40px; }
+            .promise-grid, .collection-grid, .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner { padding: 12px 16px; }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+                gap: 8px;
+            }
+
+            nav.active { display: flex; }
+            nav a { width: 100%; text-align: center; }
+            nav a.cta-btn { margin: 4px 0; }
+            .lang-switch { margin: 4px 0; }
+            .mobile-toggle { display: block; }
+
+            .hero {
+                padding: 100px 0 50px;
+                min-height: auto;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero p { margin: 0 auto 32px; }
+            .hero-buttons { justify-content: center; }
+            .hero-image-wrap img { max-width: 360px; }
+
+            .promise-grid, .collection-grid, .gallery-grid,
+            .story-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .story-grid { gap: 50px; }
+            .floating-tag { font-size: 0.78rem; padding: 10px 14px; }
+            .newsletter-card { padding: 50px 24px; }
+            .promise, .story, .collection, .gallery,
+            .newsletter, .contact { padding: 70px 0; }
+        }
+
+        /* ============ WHATSAPP FLOAT ============ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px; right: 24px;
+            z-index: 999;
+            width: 60px; height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37,211,102,0.5);
+        }
+
+        .whatsapp-float svg {
+            width: 32px; height: 32px;
+            fill: white;
+        }
+
+        /* ============ ANIMATION REVEAL ============ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <span class="logo-mark">🐾</span>
+                <span class="logo-text">Zac<span>Pet</span></span>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('active')" aria-label="Menu">&#9776;</button>
+            <nav>
+                <a href="#promise">Nuestra promesa</a>
+                <a href="#story">Historia</a>
+                <a href="#collection">Colección</a>
+                <a href="#contact" class="cta-btn">Contacto</a>
+                <a href="/en/" class="lang-switch" aria-label="Switch to English">
+                    EN
+                    <svg width="20" height="14" viewBox="0 0 60 30">
+                        <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                        <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+                        <g clip-path="url(#s)">
+                            <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                        </g>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home">
+        <div class="hero-blob-1"></div>
+        <div class="hero-blob-2"></div>
+        <div class="hero-blob-3"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="dot"></span> Nueva marca · Hecho en Valencia</div>
+                <h1>Cosas <span class="squiggle">bonitas</span> para mascotas que son familia.</h1>
+                <p>ZacPet diseña accesorios y productos pensados para perros y gatos felices — y para humanos que los miman como se merecen. Calidad, cariño, y un toque divertido en cada detalle.</p>
+                <div class="hero-buttons">
+                    <a href="#collection" class="btn btn-primary">Descubre la colección &#10132;</a>
+                    <a href="#story" class="btn btn-outline">Nuestra historia</a>
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <img src="images/hero-pet.jpg" alt="Mascota feliz — ZacPet">
+                <div class="floating-tag tag-1">🐶 Pet-aprobado</div>
+                <div class="floating-tag tag-2">💛 Hecho con cariño</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROMISE ====== -->
+    <section class="promise" id="promise">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Nuestra promesa</div>
+                <h2 class="section-title">Tres cosas que nunca negociamos.</h2>
+                <p class="section-subtitle">Porque tu mascota se merece lo mejor — y tú te mereces tranquilidad.</p>
+            </div>
+            <div class="promise-grid">
+                <div class="promise-card c-1 reveal">
+                    <div class="p-icon">🐾</div>
+                    <h3>Diseñado para mascotas reales</h3>
+                    <p>Cada producto pasa por las patas (y las bocas, y las narices) de mascotas de verdad antes de llegar a tu casa. Nada sale al mercado sin su sello de aprobación.</p>
+                </div>
+                <div class="promise-card c-2 reveal">
+                    <div class="p-icon">🌱</div>
+                    <h3>Materiales que respetamos</h3>
+                    <p>Elegimos materiales seguros, duraderos y — siempre que es posible — sostenibles. Lo que es bueno para tu mascota suele ser bueno para el planeta también.</p>
+                </div>
+                <div class="promise-card c-3 reveal">
+                    <div class="p-icon">✨</div>
+                    <h3>Un toque de magia</h3>
+                    <p>No vendemos lo aburrido. Cada detalle — colores, formas, tacto — está pensado para arrancar una sonrisa. La rutina de cuidar a tu mascota no debería ser gris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== STORY ====== -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image">
+                    <img src="images/dog-smile.jpg" alt="La historia de ZacPet">
+                    <div class="floating-tag" style="background: var(--sunny); color: var(--text-dark);">📍 Valencia</div>
+                </div>
+                <div class="story-content">
+                    <div class="section-label">Nuestra historia</div>
+                    <h2>Empezó con <em>una sola mascota</em> y una idea muy clara.</h2>
+                    <p>ZacPet nació en Valencia, de la mano de quienes creemos que las mascotas no son un accesorio — son familia. Después de años buscando productos que combinaran calidad, diseño y un poquito de personalidad… decidimos hacerlos nosotros.</p>
+                    <p>Detrás del nombre hay una historia personal. Detrás de cada producto, horas de pruebas, ajustes y muchas, muchas patas movidas en señal de aprobación.</p>
+                    <p>Pequeña marca, gran corazón. Empezamos con una colección curada — y desde ahí, crecemos contigo.</p>
+                    <div class="signature">— Familia ZacPet 🐾</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== COLLECTION ====== -->
+    <section class="collection" id="collection">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Próximamente</div>
+                <h2 class="section-title">La primera colección.</h2>
+                <p class="section-subtitle">Pocos productos, elegidos con cariño. Sin relleno, sin compromisos. Sé el primero en saber cuándo abrimos.</p>
+            </div>
+            <div class="collection-grid">
+                <div class="product-card bg-1 reveal">
+                    <div class="p-image">
+                        <span class="soon-badge">Próximamente</span>
+                        <img src="images/funny-dog-tongue.jpg" alt="Esenciales para perros">
+                    </div>
+                    <div class="p-body">
+                        <h3>Esenciales caninos</h3>
+                        <p>Lo que tu perro de verdad necesita — pensado en serio, hecho con humor.</p>
+                    </div>
+                </div>
+                <div class="product-card bg-2 reveal">
+                    <div class="p-image">
+                        <span class="soon-badge">Próximamente</span>
+                        <img src="images/cat-funny.jpg" alt="Esenciales para gatos">
+                    </div>
+                    <div class="p-body">
+                        <h3>Esenciales felinos</h3>
+                        <p>Para gatos exigentes (¿hay otro tipo?). Diseño minimalista, calidad máxima.</p>
+                    </div>
+                </div>
+                <div class="product-card bg-3 reveal">
+                    <div class="p-image">
+                        <span class="soon-badge">Próximamente</span>
+                        <img src="images/pet-products.jpg" alt="Edición especial">
+                    </div>
+                    <div class="p-body">
+                        <h3>Ediciones limitadas</h3>
+                        <p>Colecciones de temporada, regalos especiales y sorpresas que no encontrarás en otro sitio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FUNNY GALLERY ====== -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Momentos ZacPet</div>
+                <h2 class="section-title">Hecho para <em>momentos así.</em></h2>
+                <p class="section-subtitle">Las mascotas no posan — pasan cosas. Y nosotros estamos aquí para esas cosas.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/puppy-yawn.jpg" alt="Cachorro bostezando">
+                    <div class="caption">"Espera, déjame estirarme primero."</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cat-surprised.jpg" alt="Gato sorprendido">
+                    <div class="caption">Cuando suena el cubierto del comedor.</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dog-happy.jpg" alt="Perro feliz">
+                    <div class="caption">Lunes por la mañana, según ellos.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NEWSLETTER ====== -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <h2>Sé el primero en saberlo.</h2>
+                <p>Lanzamos pronto. Únete a la lista para acceso anticipado, descuentos de bienvenida y mucho contenido divertido de mascotas.</p>
+                <form class="newsletter-form" action="https://formsubmit.co/info@zacpet.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva suscripción ZacPet (ES)">
+                    <input type="hidden" name="_next" value="https://zacpet.com/?subscribed=1">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="email" name="email" placeholder="tu@email.com" required>
+                    <button type="submit">Avísame &#10132;</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-label">Hablemos</div>
+                    <h2>Estamos cerca.</h2>
+                    <p>Una marca pequeña con base en Valencia. Si tienes una idea, pregunta o simplemente quieres saludar — escríbenos.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="m-icon">✉️</div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@zacpet.com">info@zacpet.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="m-icon">📍</div>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <span>Carrer 295, 9<br>46182 Paterna, Valencia · España</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="m-icon">🕒</div>
+                            <div>
+                                <strong>Atención</strong>
+                                <span>Lunes a Viernes · 09:00 – 18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="TikTok" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43V8.86a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.84-.29z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=Carrer+295,+9,+46182+Paterna,+Valencia,+Spain&output=embed" allowfullscreen="" loading="lazy" title="ZacPet — Paterna, Valencia"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <span class="logo-mark" style="width:32px;height:32px;font-size:0.95rem;">🐾</span>
+                    ZacPet
+                </div>
+                <div class="footer-tagline">Cosas bonitas para mascotas que son familia.</div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 ZacPet · Paterna, Valencia · España</span>
+                <span style="opacity:0.4">|</span>
+                <span>
+                    <a href="mailto:info@zacpet.com">info@zacpet.com</a> ·
+                    <a href="/en/">English</a> ·
+                    Built by <a href="https://gobizit.ai" target="_blank" rel="noopener">GoBizIT.ai</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== WHATSAPP ====== -->
+    <a href="mailto:info@zacpet.com" class="whatsapp-float" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        // Mobile menu close on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 30) {
+                header.style.background = 'rgba(255, 248, 240, 0.98)';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+            } else {
+                header.style.background = 'rgba(255, 248, 240, 0.92)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Newsletter form feedback
+        document.querySelector('.newsletter-form').addEventListener('submit', function() {
+            const btn = this.querySelector('button');
+            btn.textContent = 'Enviando...';
+            btn.disabled = true;
+        });
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ZacPet",
+        "description": "Productos para mascotas con cariño, diseñados en Valencia.",
+        "url": "https://zacpet.com",
+        "email": "info@zacpet.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Carrer 295, 9",
+            "addressLocality": "Paterna",
+            "addressRegion": "Valencia",
+            "postalCode": "46182",
+            "addressCountry": "ES"
+        },
+        "areaServed": ["ES", "EU"],
+        "inLanguage": ["es", "en"]
+    }
+    </script>
+</body>
+</html>
