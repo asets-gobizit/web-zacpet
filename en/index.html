@@ -142,13 +142,13 @@
         }
 
         .hero {
-            position: relative; min-height: 100vh;
+            position: relative;
             display: flex; align-items: center;
             background:
                 radial-gradient(ellipse at top right, rgba(255,200,87,0.20) 0%, transparent 55%),
                 radial-gradient(ellipse at bottom left, rgba(61,181,166,0.18) 0%, transparent 55%),
                 var(--cream);
-            overflow: hidden; padding: 110px 0 60px;
+            overflow: hidden; padding: 96px 0 56px;
         }
         .hero-blob-1, .hero-blob-2, .hero-blob-3 {
             position: absolute; border-radius: 50%; filter: blur(60px);
@@ -243,7 +243,7 @@
             50% { transform: translateY(-12px); }
         }
 
-        .promise { padding: 100px 0; position: relative; }
+        .promise { padding: 64px 0; position: relative; }
         .section-label {
             display: inline-block; font-size: 0.78rem; font-weight: 800;
             text-transform: uppercase; letter-spacing: 0.18em;
@@ -280,7 +280,7 @@
 
         .story {
             background: linear-gradient(135deg, var(--cream-warm) 0%, var(--cream) 100%);
-            padding: 100px 0;
+            padding: 64px 0;
         }
         .story-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 70px; align-items: center; }
         .story-image { position: relative; }
@@ -308,7 +308,7 @@
             font-size: 1.2rem; color: var(--coral); margin-top: 24px;
         }
 
-        .collection { padding: 100px 0; }
+        .collection { padding: 64px 0; }
         .collection-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
         .product-card {
             background: var(--white); border-radius: var(--radius);
@@ -335,7 +335,7 @@
 
         .gallery {
             background: var(--text-dark); color: var(--white);
-            padding: 100px 0; position: relative; overflow: hidden;
+            padding: 64px 0; position: relative; overflow: hidden;
         }
         .gallery::before {
             content: ''; position: absolute; top: -50%; right: -20%;
@@ -362,7 +362,7 @@
             font-style: italic; font-size: 1.05rem; font-weight: 600;
         }
 
-        .newsletter { padding: 100px 0; background: var(--cream); }
+        .newsletter { padding: 64px 0; background: var(--cream); }
         .newsletter-card {
             background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
             border-radius: var(--radius); padding: 70px 40px;
@@ -404,7 +404,7 @@
             background: var(--white); color: var(--coral); transform: translateY(-2px);
         }
 
-        .contact { padding: 100px 0; background: var(--white); }
+        .contact { padding: 64px 0; background: var(--white); }
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
         .contact-info h2 {
             font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.15; margin-bottom: 18px;
@@ -487,7 +487,7 @@
             nav a.cta-btn { margin: 4px 0; }
             .lang-switch { margin: 4px 0; }
             .mobile-toggle { display: block; }
-            .hero { padding: 100px 0 50px; min-height: auto; }
+            .hero { padding: 64px 0 36px; min-height: auto; }
             .hero .container { grid-template-columns: 1fr; text-align: center; gap: 40px; }
             .hero p { margin: 0 auto 32px; }
             .hero-buttons { justify-content: center; }
