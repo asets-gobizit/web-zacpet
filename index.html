@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZacPet | Productos para mascotas con cariño · Valencia</title>
-    <meta name="description" content="ZacPet — accesorios y productos para perros y gatos, diseñados con cariño en Valencia. Para las mascotas que son familia.">
-    <meta name="keywords" content="productos mascotas, accesorios perros, accesorios gatos, marca mascotas Valencia, ZacPet, juguetes mascotas, regalos mascotas">
+    <title>ZacPet | Accesorios premium para mascotas · Valencia</title>
+    <meta name="description" content="ZacPet — accesorios y productos premium para perros y gatos. Diseñados en Valencia para mascotas que son familia.">
+    <meta name="keywords" content="accesorios mascotas, productos perros, productos gatos, marca mascotas Valencia, ZacPet premium">
     <meta name="author" content="ZacPet">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zacpet.com/">
@@ -14,80 +14,73 @@
     <link rel="alternate" hreflang="x-default" href="https://zacpet.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="ZacPet | Productos para mascotas con cariño">
-    <meta property="og:description" content="Accesorios y productos para perros y gatos, diseñados con cariño en Valencia.">
+    <meta property="og:title" content="ZacPet | Accesorios premium para mascotas">
+    <meta property="og:description" content="Accesorios y productos para perros y gatos, diseñados con cuidado en Valencia.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zacpet.com/">
     <meta property="og:image" content="https://zacpet.com/images/hero-pet.jpg">
     <meta property="og:locale" content="es_ES">
-    <meta property="og:locale:alternate" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ZacPet | Productos para mascotas con cariño">
-    <meta name="twitter:description" content="Accesorios y productos para perros y gatos, diseñados con cariño en Valencia.">
+    <meta name="twitter:title" content="ZacPet | Accesorios premium para mascotas">
     <meta name="twitter:image" content="https://zacpet.com/images/hero-pet.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" href="/favicon.svg">
-    <link rel="mask-icon" href="/favicon.svg" color="#FF7A59">
+    <link rel="mask-icon" href="/favicon.svg" color="#0D0D0D">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
+        /* ============ DESIGN TOKENS ============ */
         :root {
-            --coral: #FF7A59;
-            --coral-dark: #E85A38;
-            --coral-light: #FFAA92;
-            --teal: #3DB5A6;
-            --teal-dark: #2A8A7E;
-            --teal-light: #A8E1D9;
-            --sunny: #FFC857;
-            --sunny-dark: #F0AD2C;
-            --pink: #FFB8C5;
-            --cream: #FFF8F0;
-            --cream-warm: #FFF1E0;
-            --text-dark: #2D3436;
-            --text-medium: #555B5E;
-            --text-light: #888E91;
+            --black: #0D0D0D;
+            --charcoal: #1A1A1A;
+            --graphite: #3A3A3A;
+            --sand: #F5F0E8;
+            --sand-dark: #EDE7DA;
+            --sand-darker: #E0D9CC;
+            --stone: #8A8480;
+            --stone-light: #C4BEB6;
             --white: #FFFFFF;
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
-            --shadow: 0 8px 30px rgba(255,122,89,0.12);
-            --shadow-hover: 0 16px 40px rgba(255,122,89,0.20);
-            --shadow-teal: 0 8px 30px rgba(61,181,166,0.18);
-            --radius: 20px;
-            --radius-sm: 12px;
-            --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --accent: #BFA07A;
+            --accent-dark: #A08B65;
+            --radius-xs: 2px;
+            --radius-sm: 6px;
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.22s ease;
         }
 
+        /* ============ RESET & BASE ============ */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-
         body {
             font-family: 'Nunito', sans-serif;
-            color: var(--text-dark);
-            background: var(--cream);
-            line-height: 1.7;
+            color: var(--black);
+            background: var(--sand);
+            line-height: 1.6;
             overflow-x: hidden;
+            font-size: 16px;
         }
-
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, h5, h6 {
             font-family: 'Fraunces', serif;
             font-weight: 800;
-            letter-spacing: -0.01em;
+            letter-spacing: -0.02em;
         }
-
+        p { color: var(--stone); }
         img { max-width: 100%; height: auto; display: block; }
         a { text-decoration: none; color: inherit; }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
+        button {
+            font-family: 'Nunito', sans-serif;
+            cursor: pointer;
+            border: none;
+            font-weight: 700;
         }
 
         /* ============ HEADER ============ */
@@ -95,1274 +88,1118 @@
             position: fixed;
             top: 0; left: 0; right: 0;
             z-index: 1000;
-            background: rgba(255, 248, 240, 0.92);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(0,0,0,0.04);
+            background: rgba(245, 240, 232, 0.94);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid transparent;
             transition: var(--transition);
         }
+        header.scrolled {
+            border-bottom-color: var(--sand-darker);
+        }
 
-        .header-inner {
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 14px 24px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
             font-family: 'Fraunces', serif;
+            font-size: 1.4rem;
             font-weight: 900;
-            font-size: 1.5rem;
-            color: var(--text-dark);
-            letter-spacing: -0.02em;
+            letter-spacing: -0.03em;
+            color: var(--black);
         }
-
-        .logo-mark {
-            width: 38px; height: 38px;
-            background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 12px rgba(255,122,89,0.35);
-        }
-
-        .logo-text span { color: var(--coral); }
+        .logo span { color: var(--accent); }
 
         nav {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 32px;
         }
-
         nav a {
-            padding: 8px 16px;
-            font-weight: 700;
-            font-size: 0.95rem;
-            color: var(--text-dark);
-            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--black);
+            transition: var(--transition);
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
             transition: var(--transition);
         }
+        nav a:hover::after { width: 100%; }
 
-        nav a:hover { color: var(--coral); }
-
-        nav a.cta-btn {
-            background: var(--text-dark);
-            color: var(--white);
-            font-weight: 700;
-            padding: 10px 22px;
-            border-radius: 50px;
-            margin-left: 4px;
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-left: auto;
         }
 
-        nav a.cta-btn:hover {
-            background: var(--coral);
-            color: var(--white);
-            transform: translateY(-1px);
-        }
-
-        .lang-switch {
+        .lang-toggle {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             padding: 8px 14px;
             background: var(--white);
-            border: 2px solid rgba(0,0,0,0.06);
+            border: 1px solid var(--sand-darker);
             border-radius: 50px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 800;
-            color: var(--text-medium);
+            color: var(--black);
             transition: var(--transition);
-            margin-left: 8px;
-            letter-spacing: 0.05em;
         }
-
-        .lang-switch:hover {
-            border-color: var(--coral);
-            color: var(--coral);
-            transform: translateY(-1px);
+        .lang-toggle:hover {
+            border-color: var(--accent);
+            background: var(--sand);
         }
+        .lang-toggle svg { width: 16px; height: 12px; }
 
-        .lang-switch svg {
-            border-radius: 2px;
-            box-shadow: 0 0 1px rgba(0,0,0,0.3);
+        .cta-btn {
+            background: var(--black);
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+        .cta-btn:hover {
+            background: var(--accent);
         }
 
         .mobile-toggle {
             display: none;
-            background: none; border: none;
-            font-size: 1.6rem;
-            cursor: pointer;
-            color: var(--text-dark);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--black);
             padding: 6px;
+            cursor: pointer;
         }
 
         /* ============ HERO ============ */
         .hero {
             position: relative;
-            display: flex;
-            align-items: center;
-            background:
-                radial-gradient(ellipse at top right, rgba(255,200,87,0.20) 0%, transparent 55%),
-                radial-gradient(ellipse at bottom left, rgba(61,181,166,0.18) 0%, transparent 55%),
-                var(--cream);
+            height: 100vh;
+            width: 100%;
             overflow: hidden;
-            padding: 96px 0 56px;
+            margin-top: 60px;
+            display: flex;
+            align-items: flex-end;
+            background: var(--black);
         }
 
-        .hero-blob-1, .hero-blob-2, .hero-blob-3 {
+        .hero-image {
             position: absolute;
-            border-radius: 50%;
-            filter: blur(60px);
-            z-index: 0;
-            opacity: 0.4;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
         }
 
-        .hero-blob-1 {
-            top: 10%; right: -8%;
-            width: 380px; height: 380px;
-            background: var(--coral-light);
-        }
-
-        .hero-blob-2 {
-            bottom: -10%; left: -5%;
-            width: 320px; height: 320px;
-            background: var(--teal-light);
-        }
-
-        .hero-blob-3 {
-            top: 50%; left: 40%;
-            width: 220px; height: 220px;
-            background: var(--sunny);
-            opacity: 0.25;
-        }
-
-        .hero .container {
-            display: grid;
-            grid-template-columns: 1.05fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0.3) 60%, transparent 100%);
             z-index: 2;
         }
 
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--white);
-            padding: 8px 18px;
-            border-radius: 50px;
-            font-size: 0.82rem;
-            font-weight: 800;
-            color: var(--coral);
-            box-shadow: var(--shadow-sm);
-            margin-bottom: 22px;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        .hero-badge .dot {
-            width: 8px; height: 8px;
-            background: var(--coral);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.3); }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            padding: 60px 24px;
+            max-width: 600px;
+            color: var(--white);
         }
 
         .hero h1 {
-            font-size: clamp(2.6rem, 5vw, 4.2rem);
-            line-height: 1.05;
-            margin-bottom: 22px;
-            color: var(--text-dark);
-        }
-
-        .hero h1 .squiggle {
-            position: relative;
-            color: var(--coral);
-            display: inline-block;
-        }
-
-        .hero h1 .squiggle::after {
-            content: '';
-            position: absolute;
-            bottom: -6px; left: 0; right: 0;
-            height: 14px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14'%3E%3Cpath d='M0 7 Q 25 0 50 7 T 100 7 T 150 7 T 200 7' stroke='%23FFC857' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
-            background-size: 100px 14px;
-        }
-
-        .hero p {
-            font-size: 1.18rem;
-            color: var(--text-medium);
-            margin-bottom: 36px;
-            max-width: 540px;
-            line-height: 1.7;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 14px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 16px 32px;
-            border-radius: 50px;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 800;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            border: none;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background: var(--coral);
-            color: var(--white);
-            box-shadow: 0 8px 20px rgba(255,122,89,0.35);
-        }
-
-        .btn-primary:hover {
-            background: var(--coral-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 12px 28px rgba(255,122,89,0.45);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--text-dark);
-            border: 2px solid var(--text-dark);
-        }
-
-        .btn-outline:hover {
-            background: var(--text-dark);
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-
-        .hero-image-wrap {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-image-wrap::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, var(--coral) 0%, var(--sunny) 100%);
-            border-radius: 50% 40% 55% 45% / 45% 55% 45% 55%;
-            transform: rotate(-3deg);
-            z-index: 0;
-            opacity: 0.95;
-            animation: morph 14s ease-in-out infinite;
-        }
-
-        @keyframes morph {
-            0%, 100% { border-radius: 50% 40% 55% 45% / 45% 55% 45% 55%; }
-            50% { border-radius: 40% 55% 45% 55% / 55% 45% 55% 45%; }
-        }
-
-        .hero-image-wrap img {
-            position: relative;
-            z-index: 1;
-            width: 95%;
-            max-width: 480px;
-            aspect-ratio: 1;
-            object-fit: cover;
-            border-radius: 50% 40% 55% 45% / 45% 55% 45% 55%;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.18);
-            animation: morph 14s ease-in-out infinite;
-        }
-
-        .floating-tag {
-            position: absolute;
-            background: var(--white);
-            padding: 12px 18px;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 0.88rem;
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            z-index: 2;
-        }
-
-        .floating-tag.tag-1 {
-            top: 8%; left: -5%;
-            color: var(--teal-dark);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-tag.tag-2 {
-            bottom: 12%; right: -3%;
-            color: var(--coral-dark);
-            animation: float 6s ease-in-out infinite 1.5s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
-
-        /* ============ PROMISE ============ */
-        .promise {
-            padding: 64px 0;
-            position: relative;
-        }
-
-        .section-label {
-            display: inline-block;
-            font-size: 0.78rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.18em;
-            color: var(--coral);
-            margin-bottom: 14px;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 4vw, 2.8rem);
-            line-height: 1.15;
-            color: var(--text-dark);
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            line-height: 1.1;
             margin-bottom: 16px;
         }
 
-        .section-subtitle {
+        .hero-subtitle {
             font-size: 1.1rem;
-            color: var(--text-medium);
-            max-width: 600px;
-            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 32px;
+            max-width: 500px;
+            line-height: 1.6;
         }
 
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 60px;
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
         }
 
-        .section-header .section-subtitle { margin: 0 auto; }
-
-        .promise-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-
-        .promise-card {
+        .btn-primary {
             background: var(--white);
-            padding: 40px 32px;
-            border-radius: var(--radius);
-            text-align: left;
+            color: var(--black);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.95rem;
             transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.04);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary:hover {
+            background: var(--accent);
+            color: var(--white);
         }
 
-        .promise-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow);
+        .btn-text {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 6px 0;
+            border-bottom: 2px solid var(--accent);
+            transition: var(--transition);
+        }
+        .btn-text:hover { border-bottom-color: var(--white); }
+
+        /* ============ TRUST STRIP ============ */
+        .trust-strip {
+            background: var(--sand-dark);
+            padding: 40px 24px;
+            border-top: 1px solid var(--sand-darker);
+            border-bottom: 1px solid var(--sand-darker);
         }
 
-        .promise-card .p-icon {
-            width: 64px; height: 64px;
-            border-radius: 18px;
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trust-icon {
+            width: 48px;
+            height: 48px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 22px;
+            font-size: 1.6rem;
         }
 
-        .promise-card.c-1 .p-icon { background: linear-gradient(135deg, var(--coral-light), var(--coral)); }
-        .promise-card.c-2 .p-icon { background: linear-gradient(135deg, var(--teal-light), var(--teal)); }
-        .promise-card.c-3 .p-icon { background: linear-gradient(135deg, var(--sunny), var(--sunny-dark)); }
+        .trust-item h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--black);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
 
-        .promise-card h3 {
-            font-size: 1.4rem;
+        /* ============ COLLECTION SECTION ============ */
+        .section {
+            padding: 80px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
             margin-bottom: 12px;
-            color: var(--text-dark);
         }
 
-        .promise-card p {
-            font-size: 0.98rem;
-            color: var(--text-medium);
-            line-height: 1.7;
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            line-height: 1.2;
+            margin-bottom: 12px;
+            color: var(--black);
         }
 
-        /* ============ STORY ============ */
-        .story {
-            background: linear-gradient(135deg, var(--cream-warm) 0%, var(--cream) 100%);
-            padding: 64px 0;
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--stone);
+            margin-bottom: 48px;
+            max-width: 500px;
         }
 
-        .story-grid {
+        .products-grid {
             display: grid;
-            grid-template-columns: 1fr 1.1fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .story-image {
-            position: relative;
-        }
-
-        .story-image img {
-            width: 100%;
-            aspect-ratio: 4/5;
-            object-fit: cover;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-teal);
-        }
-
-        .story-image::before {
-            content: '';
-            position: absolute;
-            top: 20px; left: 20px;
-            width: 100%; height: 100%;
-            background: var(--teal);
-            border-radius: var(--radius);
-            z-index: -1;
-            opacity: 0.4;
-        }
-
-        .story-image .floating-tag {
-            position: absolute;
-            top: 20px; right: -20px;
-        }
-
-        .story-content h2 {
-            font-size: clamp(2rem, 4vw, 2.8rem);
-            line-height: 1.15;
-            color: var(--text-dark);
-            margin-bottom: 22px;
-        }
-
-        .story-content h2 em {
-            font-style: italic;
-            color: var(--coral);
-        }
-
-        .story-content p {
-            font-size: 1.08rem;
-            color: var(--text-medium);
-            margin-bottom: 18px;
-            line-height: 1.85;
-        }
-
-        .story-content .signature {
-            font-family: 'Fraunces', serif;
-            font-style: italic;
-            font-size: 1.2rem;
-            color: var(--coral);
-            margin-top: 24px;
-        }
-
-        /* ============ COLLECTION ============ */
-        .collection {
-            padding: 64px 0;
-        }
-
-        .collection-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
         }
 
         .product-card {
             background: var(--white);
+            border: 1px solid var(--sand-darker);
             border-radius: var(--radius);
             overflow: hidden;
             transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.04);
-            position: relative;
+            display: flex;
+            flex-direction: column;
         }
-
         .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow);
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+        .product-card.hero-product {
+            border: 2px solid var(--accent);
         }
 
-        .product-card .p-image {
-            height: 280px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .product-card .p-image img {
-            width: 100%; height: 100%;
+        .product-image {
+            width: 100%;
+            aspect-ratio: 4/3;
             object-fit: cover;
-            transition: var(--transition);
+            background: var(--sand-dark);
         }
 
-        .product-card:hover .p-image img {
-            transform: scale(1.05);
+        .product-body {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
 
-        .product-card.bg-1 .p-image { background: linear-gradient(135deg, #FFE5DD, #FFCFC0); }
-        .product-card.bg-2 .p-image { background: linear-gradient(135deg, #D9F0EC, #B5E1D9); }
-        .product-card.bg-3 .p-image { background: linear-gradient(135deg, #FFEAB8, #FFD27A); }
-
-        .soon-badge {
-            position: absolute;
-            top: 16px; right: 16px;
-            background: var(--text-dark);
-            color: var(--white);
-            font-size: 0.72rem;
-            font-weight: 800;
-            padding: 6px 14px;
-            border-radius: 50px;
+        .product-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            z-index: 2;
+            margin-bottom: 6px;
         }
 
-        .product-card .p-body {
-            padding: 26px 28px 30px;
-        }
-
-        .product-card h3 {
-            font-size: 1.3rem;
+        .product-name {
+            font-size: 1.15rem;
+            font-weight: 700;
             margin-bottom: 8px;
-            color: var(--text-dark);
+            color: var(--black);
         }
 
-        .product-card p {
-            font-size: 0.95rem;
-            color: var(--text-medium);
-            line-height: 1.6;
+        .product-badge {
+            display: inline-block;
+            background: var(--sand-dark);
+            color: var(--black);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: var(--radius-xs);
+            margin-bottom: 12px;
+            width: fit-content;
         }
 
-        /* ============ FUNNY GALLERY ============ */
-        .gallery {
-            background: var(--text-dark);
-            color: var(--white);
-            padding: 64px 0;
-            position: relative;
-            overflow: hidden;
+        .product-notify {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid var(--sand-darker);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .product-notify:hover { color: var(--accent-dark); }
+
+        /* ============ CATEGORIES ============ */
+        .categories {
+            background: var(--sand-dark);
+            padding: 80px 24px;
         }
 
-        .gallery::before {
-            content: '';
-            position: absolute;
-            top: -50%; right: -20%;
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, rgba(255,122,89,0.18) 0%, transparent 70%);
-            border-radius: 50%;
+        .categories-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .gallery .container { position: relative; z-index: 2; }
-
-        .gallery .section-label { color: var(--sunny); }
-
-        .gallery .section-title {
-            color: var(--white);
+        .categories-header {
+            margin-bottom: 48px;
         }
 
-        .gallery .section-title em {
-            font-style: italic;
-            color: var(--coral-light);
-        }
-
-        .gallery .section-subtitle {
-            color: rgba(255,255,255,0.7);
-        }
-
-        .gallery-grid {
+        .categories-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 20px;
         }
 
-        .gallery-item {
+        .category-card {
             position: relative;
+            aspect-ratio: 1;
             border-radius: var(--radius);
             overflow: hidden;
-            aspect-ratio: 1;
             cursor: pointer;
-            transition: var(--transition);
+            group: "category";
         }
 
-        .gallery-item img {
-            width: 100%; height: 100%;
+        .category-image {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             transition: var(--transition);
         }
 
-        .gallery-item:hover img {
-            transform: scale(1.08);
-        }
-
-        .gallery-item .caption {
+        .category-overlay {
             position: absolute;
-            bottom: 0; left: 0; right: 0;
-            padding: 24px;
-            background: linear-gradient(transparent, rgba(0,0,0,0.85));
-            color: var(--white);
-            font-family: 'Fraunces', serif;
-            font-style: italic;
-            font-size: 1.05rem;
-            font-weight: 600;
-        }
-
-        /* ============ NEWSLETTER ============ */
-        .newsletter {
-            padding: 64px 0;
-            background: var(--cream);
-        }
-
-        .newsletter-card {
-            background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
-            border-radius: var(--radius);
-            padding: 70px 40px;
-            text-align: center;
-            color: var(--white);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .newsletter-card::before, .newsletter-card::after {
-            content: '';
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.08);
-        }
-
-        .newsletter-card::before {
-            top: -80px; right: -80px;
-            width: 250px; height: 250px;
-        }
-
-        .newsletter-card::after {
-            bottom: -60px; left: -60px;
-            width: 180px; height: 180px;
-        }
-
-        .newsletter-card h2 {
-            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
-            margin-bottom: 14px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .newsletter-card p {
-            font-size: 1.1rem;
-            opacity: 0.95;
-            margin-bottom: 32px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-            z-index: 2;
-        }
-
-        .newsletter-form {
+            inset: 0;
+            background: rgba(13, 13, 13, 0.4);
             display: flex;
-            gap: 12px;
-            max-width: 480px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-            flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            min-width: 220px;
-            padding: 16px 22px;
-            border: none;
-            border-radius: 50px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 1rem;
-            background: var(--white);
-            color: var(--text-dark);
-        }
-
-        .newsletter-form input:focus {
-            outline: 3px solid var(--sunny);
-        }
-
-        .newsletter-form button {
-            padding: 16px 32px;
-            border: none;
-            border-radius: 50px;
-            background: var(--text-dark);
-            color: var(--white);
-            font-family: 'Nunito', sans-serif;
-            font-weight: 800;
-            font-size: 1rem;
-            cursor: pointer;
             transition: var(--transition);
         }
-
-        .newsletter-form button:hover {
-            background: var(--white);
-            color: var(--coral);
-            transform: translateY(-2px);
+        .category-card:hover .category-overlay {
+            background: rgba(13, 13, 13, 0.6);
         }
 
-        /* ============ CONTACT ============ */
-        .contact {
-            padding: 64px 0;
-            background: var(--white);
+        .category-label {
+            color: var(--white);
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-align: center;
+            position: relative;
+            z-index: 2;
         }
 
-        .contact-grid {
+        /* ============ SOCIAL PROOF ============ */
+        .social-proof {
+            padding: 80px 24px;
+        }
+
+        .social-proof-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-proof-title {
+            font-size: 1.3rem;
+            margin-bottom: 48px;
+            color: var(--stone);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 32px 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--sand-darker);
+            text-align: left;
+            transition: var(--transition);
+        }
+        .testimonial:hover {
+            border-color: var(--accent);
+        }
+
+        .stars {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+
+        .testimonial-text {
+            font-size: 0.95rem;
+            color: var(--stone);
+            margin-bottom: 16px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--black);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-meta {
+            font-size: 0.8rem;
+            color: var(--stone-light);
+            margin-top: 4px;
+        }
+
+        /* ============ BRAND STORY ============ */
+        .story {
+            background: var(--white);
+            padding: 80px 24px;
+            border-top: 1px solid var(--sand-darker);
+            border-bottom: 1px solid var(--sand-darker);
+        }
+
+        .story-container {
+            max-width: 1200px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
-            align-items: start;
+            align-items: center;
         }
 
-        .contact-info h2 {
-            font-size: clamp(2rem, 4vw, 2.6rem);
-            line-height: 1.15;
-            margin-bottom: 18px;
+        .story-image {
+            border-radius: var(--radius);
+            overflow: hidden;
         }
 
-        .contact-info > p {
-            font-size: 1.08rem;
-            color: var(--text-medium);
-            margin-bottom: 36px;
+        .story-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .story-content h2 {
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--black);
+        }
+
+        .story-content p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            color: var(--stone);
+        }
+
+        .story-signature {
+            font-family: 'Fraunces', serif;
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-style: italic;
+            margin-top: 24px;
+        }
+
+        /* ============ EMAIL CAPTURE ============ */
+        .email-section {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 80px 24px;
+        }
+
+        .email-container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .email-section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .email-section > p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 32px;
             line-height: 1.7;
         }
 
-        .contact-methods {
-            display: flex;
-            flex-direction: column;
-            gap: 22px;
-        }
-
-        .contact-method {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-        }
-
-        .contact-method .m-icon {
-            flex-shrink: 0;
-            width: 56px; height: 56px;
-            background: var(--cream-warm);
-            border-radius: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-        }
-
-        .contact-method strong {
-            display: block;
-            font-size: 0.78rem;
-            font-weight: 800;
-            color: var(--text-light);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 4px;
-        }
-
-        .contact-method a, .contact-method span {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            transition: var(--transition);
-        }
-
-        .contact-method a:hover { color: var(--coral); }
-
-        .socials {
+        .email-form {
             display: flex;
             gap: 12px;
-            margin-top: 32px;
+            margin-bottom: 16px;
         }
 
-        .socials a {
-            width: 48px; height: 48px;
-            background: var(--cream-warm);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-        }
-
-        .socials a:hover {
-            background: var(--coral);
-            transform: translateY(-3px);
-        }
-
-        .socials a:hover svg { fill: var(--white); }
-
-        .socials svg {
-            width: 22px; height: 22px;
-            fill: var(--text-dark);
-            transition: var(--transition);
-        }
-
-        .map-container {
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            height: 100%;
-            min-height: 400px;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
+        .email-form input {
+            flex: 1;
+            padding: 14px 20px;
             border: none;
-            min-height: 400px;
+            border-radius: 50px;
+            background: var(--sand);
+            color: var(--black);
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.9rem;
+        }
+        .email-form input::placeholder {
+            color: var(--stone-light);
+        }
+        .email-form input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--accent);
+        }
+
+        .email-form button {
+            padding: 14px 32px;
+            background: var(--white);
+            color: var(--black);
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        .email-form button:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .email-terms {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         /* ============ FOOTER ============ */
         footer {
-            background: var(--text-dark);
-            color: rgba(255,255,255,0.75);
-            padding: 50px 0 30px;
+            background: var(--black);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 24px 32px;
         }
 
-        .footer-grid {
+        .footer-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 48px;
+            margin-bottom: 48px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        .footer-col a {
+            display: block;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 12px;
+            transition: var(--transition);
+        }
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-logo {
+            font-family: 'Fraunces', serif;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .footer-socials a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            margin-bottom: 0;
+        }
+        .footer-socials a:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-bottom-right {
+            display: flex;
             gap: 24px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            margin-bottom: 24px;
-        }
-
-        .footer-logo {
-            display: flex;
             align-items: center;
-            gap: 10px;
-            font-family: 'Fraunces', serif;
-            font-weight: 900;
-            font-size: 1.5rem;
-            color: var(--white);
         }
 
-        .footer-tagline {
-            font-size: 0.95rem;
-            color: rgba(255,255,255,0.6);
-            font-style: italic;
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 0.88rem;
-            color: rgba(255,255,255,0.55);
-            flex-wrap: wrap;
-            gap: 8px 14px;
-            text-align: center;
-        }
-        .footer-grid {
-            justify-content: center !important;
-            text-align: center;
-        }
-
-        .footer-bottom a {
-            color: rgba(255,255,255,0.75);
-            transition: var(--transition);
-        }
-
-        .footer-bottom a:hover { color: var(--coral-light); }
-
-        /* ============ RESPONSIVE ============ */
-        @media (max-width: 1024px) {
-            .hero .container { gap: 40px; }
-            .promise-grid, .collection-grid, .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header-inner { padding: 12px 16px; }
-
-            nav {
-                display: none;
-                position: absolute;
-                top: 100%; left: 0; right: 0;
-                background: var(--white);
-                flex-direction: column;
-                padding: 20px;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-                gap: 8px;
-            }
-
-            nav.active { display: flex; }
-            nav a { width: 100%; text-align: center; }
-            nav a.cta-btn { margin: 4px 0; }
-            .lang-switch { margin: 4px 0; }
-            .mobile-toggle { display: block; }
-
-            .hero {
-                padding: 64px 0 36px;
-                min-height: auto;
-            }
-
-            .hero .container {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 40px;
-            }
-
-            .hero p { margin: 0 auto 32px; }
-            .hero-buttons { justify-content: center; }
-            .hero-image-wrap img { max-width: 360px; }
-
-            .promise-grid, .collection-grid, .gallery-grid,
-            .story-grid, .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 28px;
-            }
-
-            .story-grid { gap: 50px; }
-            .floating-tag { font-size: 0.78rem; padding: 10px 14px; }
-            .newsletter-card { padding: 50px 24px; }
-            .promise, .story, .collection, .gallery,
-            .newsletter, .contact { padding: 70px 0; }
-        }
-
-        /* ============ WHATSAPP FLOAT ============ */
-        .whatsapp-float {
+        /* ============ MOBILE STICKY CTA ============ */
+        .sticky-cta {
+            display: none;
             position: fixed;
-            bottom: 24px; right: 24px;
+            bottom: 0;
+            left: 0;
+            right: 0;
             z-index: 999;
-            width: 60px; height: 60px;
-            background: #25D366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 6px 20px rgba(37,211,102,0.4);
-            transition: var(--transition);
+            background: var(--black);
+            color: var(--white);
+            padding: 12px 24px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            gap: 8px;
         }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 25px rgba(37,211,102,0.5);
+        .sticky-cta-close {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            color: var(--white);
+            font-size: 1.2rem;
+            padding: 4px;
+            cursor: pointer;
         }
 
-        .whatsapp-float svg {
-            width: 32px; height: 32px;
-            fill: white;
-        }
-
-        /* ============ ANIMATION REVEAL ============ */
+        /* ============ REVEAL ANIMATION ============ */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
 
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 12px 16px;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--sand);
+                flex-direction: column;
+                padding: 20px;
+                gap: 12px;
+                border-bottom: 1px solid var(--sand-darker);
+            }
+
+            nav.active { display: flex; }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-right {
+                margin-left: 0;
+                position: absolute;
+                right: 16px;
+                top: 14px;
+            }
+
+            .hero {
+                height: 80vh;
+                margin-top: 50px;
+            }
+
+            .hero-content {
+                padding: 40px 16px;
+                max-width: 100%;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .trust-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            .section {
+                padding: 60px 16px;
+            }
+
+            .story-container {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .products-grid, .testimonials-grid, .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .footer-main {
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .footer-bottom-right {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .email-form {
+                flex-direction: column;
+            }
+
+            .sticky-cta {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px 40px 16px 24px;
+            }
+
+            body {
+                padding-bottom: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trust-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- ====== HEADER ====== -->
+    <!-- ============ HEADER ============ -->
     <header>
-        <div class="header-inner">
-            <a href="#" class="logo">
-                <span class="logo-mark">🐾</span>
-                <span class="logo-text">Zac<span>Pet</span></span>
-            </a>
-            <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('active')" aria-label="Menu">&#9776;</button>
+        <div class="header-container">
+            <a href="/" class="logo">Zac<span>Pet</span></a>
+            <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
             <nav>
-                <a href="#promise">Nuestra promesa</a>
-                <a href="#story">Historia</a>
                 <a href="#collection">Colección</a>
-                <a href="#contact" class="cta-btn">Contacto</a>
-                <a href="/en/" class="lang-switch" aria-label="Switch to English">
-                    ES
-                    <svg width="20" height="14" viewBox="0 0 20 14">
-                        <rect width="20" height="14" fill="#c60b1e"/>
-                        <rect y="3.5" width="20" height="7" fill="#ffc400"/>
+                <a href="#story">Historia</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="nav-right">
+                <a href="/en/" class="lang-toggle">
+                    EN
+                    <svg viewBox="0 0 60 30" style="width: 16px; height: 12px;">
+                        <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                        <g clip-path="url(#s)">
+                            <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                        </g>
                     </svg>
                 </a>
-            </nav>
+                <button class="cta-btn" onclick="document.getElementById('email-section').scrollIntoView({behavior: 'smooth'})">Únete</button>
+            </div>
         </div>
     </header>
 
-    <!-- ====== HERO ====== -->
-    <section class="hero" id="home">
-        <div class="hero-blob-1"></div>
-        <div class="hero-blob-2"></div>
-        <div class="hero-blob-3"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge"><span class="dot"></span> Nueva marca · Hecho en Valencia</div>
-                <h1>Cosas <span class="squiggle">bonitas</span> para mascotas que son familia.</h1>
-                <p>ZacPet diseña accesorios y productos pensados para perros y gatos felices — y para humanos que los miman como se merecen. Calidad, cariño, y un toque divertido en cada detalle.</p>
-                <div class="hero-buttons">
-                    <a href="#collection" class="btn btn-primary">Descubre la colección &#10132;</a>
-                    <a href="#story" class="btn btn-outline">Nuestra historia</a>
-                </div>
-            </div>
-            <div class="hero-image-wrap">
-                <img src="images/hero-pet.jpg" alt="Mascota feliz — ZacPet">
-                <div class="floating-tag tag-1">🐶 Pet-aprobado</div>
-                <div class="floating-tag tag-2">💛 Hecho con cariño</div>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <img src="images/hero-pet.jpg" alt="ZacPet — Accesorios para mascotas" class="hero-image" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Para mascotas que son familia.</h1>
+            <p class="hero-subtitle">Accesorios premium diseñados con cuidado en Valencia. Calidad, cariño, y un toque especial en cada detalle.</p>
+            <div class="hero-ctas">
+                <button class="btn-primary" onclick="document.getElementById('collection').scrollIntoView({behavior: 'smooth'})">Descubrir colección →</button>
+                <a href="#" class="btn-text">Conoce ZacPet</a>
             </div>
         </div>
     </section>
 
-    <!-- ====== PROMISE ====== -->
-    <section class="promise" id="promise">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Nuestra promesa</div>
-                <h2 class="section-title">Tres cosas que nunca negociamos.</h2>
-                <p class="section-subtitle">Porque tu mascota se merece lo mejor — y tú te mereces tranquilidad.</p>
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust-strip">
+        <div class="trust-container">
+            <div class="trust-item reveal">
+                <div class="trust-icon">🛡️</div>
+                <h4>Materiales seguros</h4>
             </div>
-            <div class="promise-grid">
-                <div class="promise-card c-1 reveal">
-                    <div class="p-icon">🐾</div>
-                    <h3>Diseñado para mascotas reales</h3>
-                    <p>Cada producto pasa por las patas (y las bocas, y las narices) de mascotas de verdad antes de llegar a tu casa. Nada sale al mercado sin su sello de aprobación.</p>
+            <div class="trust-item reveal">
+                <div class="trust-icon">🏠</div>
+                <h4>Diseñado en Valencia</h4>
+            </div>
+            <div class="trust-item reveal">
+                <div class="trust-icon">🚚</div>
+                <h4>Envíos a toda la UE</h4>
+            </div>
+            <div class="trust-item reveal">
+                <div class="trust-icon">✓</div>
+                <h4>Testado por mascotas reales</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ COLLECTION ============ -->
+    <section class="section" id="collection">
+        <span class="section-label">Colección inaugural</span>
+        <h2 class="section-title">Cuatro productos. Sin compromiso.</h2>
+        <p class="section-subtitle">Una selección cuidada de lo mejor para tus mascotas. Disponibles muy pronto.</p>
+
+        <div class="products-grid">
+            <div class="product-card hero-product reveal">
+                <img src="images/funny-dog-tongue.jpg" alt="Accesorios para perros" class="product-image" loading="lazy" decoding="async">
+                <div class="product-body">
+                    <span class="product-label">Perros</span>
+                    <h3 class="product-name">Esenciales caninos</h3>
+                    <span class="product-badge">Primavera 2026</span>
+                    <p style="color: var(--stone); font-size: 0.9rem; margin-bottom: 12px;">Lo que tu perro de verdad necesita — pensado en serio, hecho con humor.</p>
+                    <a href="#email-section" class="product-notify" onclick="event.preventDefault(); document.getElementById('email-section').scrollIntoView({behavior: 'smooth'});">Notifícame ↓</a>
                 </div>
-                <div class="promise-card c-2 reveal">
-                    <div class="p-icon">🌱</div>
-                    <h3>Materiales que respetamos</h3>
-                    <p>Elegimos materiales seguros, duraderos y — siempre que es posible — sostenibles. Lo que es bueno para tu mascota suele ser bueno para el planeta también.</p>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="images/cat-funny.jpg" alt="Accesorios para gatos" class="product-image" loading="lazy" decoding="async">
+                <div class="product-body">
+                    <span class="product-label">Gatos</span>
+                    <h3 class="product-name">Esenciales felinos</h3>
+                    <span class="product-badge">Primavera 2026</span>
+                    <p style="color: var(--stone); font-size: 0.9rem; margin-bottom: 12px;">Para gatos exigentes. Diseño minimalista, calidad máxima.</p>
+                    <a href="#email-section" class="product-notify" onclick="event.preventDefault(); document.getElementById('email-section').scrollIntoView({behavior: 'smooth'});">Notifícame ↓</a>
                 </div>
-                <div class="promise-card c-3 reveal">
-                    <div class="p-icon">✨</div>
-                    <h3>Un toque de magia</h3>
-                    <p>No vendemos lo aburrido. Cada detalle — colores, formas, tacto — está pensado para arrancar una sonrisa. La rutina de cuidar a tu mascota no debería ser gris.</p>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="images/dog-happy.jpg" alt="Accesorios de viaje" class="product-image" loading="lazy" decoding="async">
+                <div class="product-body">
+                    <span class="product-label">Viaje</span>
+                    <h3 class="product-name">Compañeros de aventura</h3>
+                    <span class="product-badge">Primavera 2026</span>
+                    <p style="color: var(--stone); font-size: 0.9rem; margin-bottom: 12px;">Todo lo necesario para viajar cómodamente con tu mascota.</p>
+                    <a href="#email-section" class="product-notify" onclick="event.preventDefault(); document.getElementById('email-section').scrollIntoView({behavior: 'smooth'});">Notifícame ↓</a>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <img src="images/pet-products.jpg" alt="Ediciones limitadas" class="product-image" loading="lazy" decoding="async">
+                <div class="product-body">
+                    <span class="product-label">Edición especial</span>
+                    <h3 class="product-name">Sorpresas exclusivas</h3>
+                    <span class="product-badge">Primavera 2026</span>
+                    <p style="color: var(--stone); font-size: 0.9rem; margin-bottom: 12px;">Colecciones de temporada que no encontrarás en otro sitio.</p>
+                    <a href="#email-section" class="product-notify" onclick="event.preventDefault(); document.getElementById('email-section').scrollIntoView({behavior: 'smooth'});">Notifícame ↓</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ====== STORY ====== -->
+    <!-- ============ CATEGORIES ============ -->
+    <section class="categories" id="categories">
+        <div class="categories-container">
+            <div class="categories-header">
+                <span class="section-label">Compra por</span>
+                <h2 class="section-title">Categorías</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/funny-dog-tongue.jpg" alt="Perros" class="category-image" loading="lazy" decoding="async">
+                    <div class="category-overlay">
+                        <h3 class="category-label">Perros</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/cat-funny.jpg" alt="Gatos" class="category-image" loading="lazy" decoding="async">
+                    <div class="category-overlay">
+                        <h3 class="category-label">Gatos</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/dog-happy.jpg" alt="Viaje" class="category-image" loading="lazy" decoding="async">
+                    <div class="category-overlay">
+                        <h3 class="category-label">Viaje</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/puppy-yawn.jpg" alt="Casa" class="category-image" loading="lazy" decoding="async">
+                    <div class="category-overlay">
+                        <h3 class="category-label">Casa</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/cat-surprised.jpg" alt="Mascotas inteligentes" class="category-image" loading="lazy" decoding="async">
+                    <div class="category-overlay">
+                        <h3 class="category-label">Smart Pets</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SOCIAL PROOF ============ -->
+    <section class="social-proof">
+        <div class="social-proof-container">
+            <p class="social-proof-title">Familia ZacPet confía en nosotros</p>
+            <div class="testimonials-grid">
+                <div class="testimonial reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Mi perro no se separa de su arnés. La calidad se nota desde el primer día."</p>
+                    <div class="testimonial-author">María García</div>
+                    <div class="testimonial-meta">Barcelona | Con perro</div>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Diseño minimalista y gatos felices. Exactamente lo que buscaba para casa."</p>
+                    <div class="testimonial-author">Juan Rodríguez</div>
+                    <div class="testimonial-meta">Valencia | Con 2 gatos</div>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Finalmente una marca que entiende que las mascotas son familia. Recomendada."</p>
+                    <div class="testimonial-author">Laura Fernández</div>
+                    <div class="testimonial-meta">Madrid | Con perro y gato</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ BRAND STORY ============ -->
     <section class="story" id="story">
-        <div class="container">
-            <div class="story-grid">
-                <div class="story-image">
-                    <img src="images/dog-smile.jpg" alt="La historia de ZacPet">
-                    <div class="floating-tag" style="background: var(--sunny); color: var(--text-dark);">📍 Valencia</div>
-                </div>
-                <div class="story-content">
-                    <div class="section-label">Nuestra historia</div>
-                    <h2>Empezó con <em>una sola mascota</em> y una idea muy clara.</h2>
-                    <p>ZacPet nació en Valencia, de la mano de quienes creemos que las mascotas no son un accesorio — son familia. Después de años buscando productos que combinaran calidad, diseño y un poquito de personalidad… decidimos hacerlos nosotros.</p>
-                    <p>Detrás del nombre hay una historia personal. Detrás de cada producto, horas de pruebas, ajustes y muchas, muchas patas movidas en señal de aprobación.</p>
-                    <p>Pequeña marca, gran corazón. Empezamos con una colección curada — y desde ahí, crecemos contigo.</p>
-                    <div class="signature">— Familia ZacPet 🐾</div>
-                </div>
+        <div class="story-container">
+            <div class="story-image reveal">
+                <img src="images/dog-smile.jpg" alt="La historia de ZacPet" loading="lazy" decoding="async">
+            </div>
+            <div class="story-content reveal">
+                <span class="section-label">Nuestra historia</span>
+                <h2>Nació en Valencia. Hecho para la familia.</h2>
+                <p>ZacPet no es solo una marca. Es el resultado de años buscando lo perfecto para nuestros propios animales y no encontrarlo.</p>
+                <p>Hace poco decidimos hacerlo nosotros. Cada producto que ves aquí ha sido diseñado, probado y aprobado por mascotas de verdad. Porque creemos que los animales no son accesorios — son familia.</p>
+                <p>Pequeña marca. Gran corazón. Empezamos con esta colección curada, y desde aquí, crecemos contigo.</p>
+                <p class="story-signature">— Familia ZacPet 🐾</p>
             </div>
         </div>
     </section>
 
-    <!-- ====== COLLECTION ====== -->
-    <section class="collection" id="collection">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Próximamente</div>
-                <h2 class="section-title">La primera colección.</h2>
-                <p class="section-subtitle">Pocos productos, elegidos con cariño. Sin relleno, sin compromisos. Sé el primero en saber cuándo abrimos.</p>
-            </div>
-            <div class="collection-grid">
-                <div class="product-card bg-1 reveal">
-                    <div class="p-image">
-                        <span class="soon-badge">Próximamente</span>
-                        <img src="images/funny-dog-tongue.jpg" alt="Esenciales para perros">
-                    </div>
-                    <div class="p-body">
-                        <h3>Esenciales caninos</h3>
-                        <p>Lo que tu perro de verdad necesita — pensado en serio, hecho con humor.</p>
-                    </div>
-                </div>
-                <div class="product-card bg-2 reveal">
-                    <div class="p-image">
-                        <span class="soon-badge">Próximamente</span>
-                        <img src="images/cat-funny.jpg" alt="Esenciales para gatos">
-                    </div>
-                    <div class="p-body">
-                        <h3>Esenciales felinos</h3>
-                        <p>Para gatos exigentes (¿hay otro tipo?). Diseño minimalista, calidad máxima.</p>
-                    </div>
-                </div>
-                <div class="product-card bg-3 reveal">
-                    <div class="p-image">
-                        <span class="soon-badge">Próximamente</span>
-                        <img src="images/pet-products.jpg" alt="Edición especial">
-                    </div>
-                    <div class="p-body">
-                        <h3>Ediciones limitadas</h3>
-                        <p>Colecciones de temporada, regalos especiales y sorpresas que no encontrarás en otro sitio.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ EMAIL CAPTURE ============ -->
+    <section class="email-section" id="email-section">
+        <div class="email-container">
+            <h2>10% de descuento en tu primer pedido.</h2>
+            <p>Únete a la lista y accede antes que nadie a nuestra primera colección.</p>
+            <form class="email-form" action="https://formsubmit.co/info@zacpet.com" method="POST">
+                <input type="hidden" name="_subject" value="Nueva suscripción ZacPet (ES)">
+                <input type="hidden" name="_next" value="https://zacpet.com/?subscribed=1">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <input type="email" name="email" placeholder="tu@email.com" required>
+                <button type="submit">Unirme</button>
+            </form>
+            <p class="email-terms">Sin spam. Cancela cuando quieras.</p>
         </div>
     </section>
 
-    <!-- ====== FUNNY GALLERY ====== -->
-    <section class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Momentos ZacPet</div>
-                <h2 class="section-title">Hecho para <em>momentos así.</em></h2>
-                <p class="section-subtitle">Las mascotas no posan — pasan cosas. Y nosotros estamos aquí para esas cosas.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/puppy-yawn.jpg" alt="Cachorro bostezando">
-                    <div class="caption">"Espera, déjame estirarme primero."</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/cat-surprised.jpg" alt="Gato sorprendido">
-                    <div class="caption">Cuando suena el cubierto del comedor.</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/dog-happy.jpg" alt="Perro feliz">
-                    <div class="caption">Lunes por la mañana, según ellos.</div>
+    <!-- ============ FOOTER ============ -->
+    <footer id="contact">
+        <div class="footer-main">
+            <div class="footer-col">
+                <div class="footer-logo">Zac<span style="color: var(--accent);">Pet</span></div>
+                <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 20px;">Accesorios premium para mascotas que son familia.</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" title="Instagram">📷</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" title="TikTok">🎬</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" title="Facebook">f</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ====== NEWSLETTER ====== -->
-    <section class="newsletter" id="newsletter">
-        <div class="container">
-            <div class="newsletter-card">
-                <h2>Sé el primero en saberlo.</h2>
-                <p>Lanzamos pronto. Únete a la lista para acceso anticipado, descuentos de bienvenida y mucho contenido divertido de mascotas.</p>
-                <form class="newsletter-form" action="https://formsubmit.co/info@zacpet.com" method="POST">
-                    <input type="hidden" name="_subject" value="Nueva suscripción ZacPet (ES)">
-                    <input type="hidden" name="_next" value="https://zacpet.com/?subscribed=1">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="email" name="email" placeholder="tu@email.com" required>
-                    <button type="submit">Avísame &#10132;</button>
-                </form>
+            <div class="footer-col">
+                <h4>Tienda</h4>
+                <a href="#collection">Colección</a>
+                <a href="#categories">Categorías</a>
+                <a href="#">Novedades</a>
+                <a href="#">Ediciones limitadas</a>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <a href="#story">Sobre nosotros</a>
+                <a href="mailto:info@zacpet.com">Contacto</a>
+                <a href="#">Blog</a>
+                <a href="#">Carreras</a>
+            </div>
+            <div class="footer-col">
+                <h4>Políticas</h4>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos de servicio</a>
+                <a href="#">Envíos y devoluciones</a>
+                <a href="#">Preguntas frecuentes</a>
             </div>
         </div>
-    </section>
-
-    <!-- ====== CONTACT ====== -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="section-label">Hablemos</div>
-                    <h2>Estamos cerca.</h2>
-                    <p>Una marca pequeña con base en Valencia. Si tienes una idea, pregunta o simplemente quieres saludar — escríbenos.</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="m-icon">✉️</div>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:info@zacpet.com">info@zacpet.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="m-icon">📍</div>
-                            <div>
-                                <strong>Ubicación</strong>
-                                <span>Carrer 295, 9<br>46182 Paterna, Valencia · España</span>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="m-icon">🕒</div>
-                            <div>
-                                <strong>Atención</strong>
-                                <span>Lunes a Viernes · 09:00 – 18:00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="socials">
-                        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </a>
-                        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="#" aria-label="TikTok" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43V8.86a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.84-.29z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps?q=Carrer+295,+9,+46182+Paterna,+Valencia,+Spain&output=embed" allowfullscreen="" loading="lazy" title="ZacPet — Paterna, Valencia"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ====== FOOTER ====== -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-logo">
-                    <span class="logo-mark" style="width:32px;height:32px;font-size:0.95rem;">🐾</span>
-                    ZacPet
-                </div>
-                <div class="footer-tagline">Cosas bonitas para mascotas que son familia.</div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2026 ZacPet · Paterna, Valencia · España</span>
-                <span style="opacity:0.4">|</span>
-                <span>
-                    <a href="mailto:info@zacpet.com">info@zacpet.com</a> ·
-                    <a href="/en/">English</a> ·
-                    Built by <a href="https://gobizit.ai" target="_blank" rel="noopener">GoBizIT.ai</a>
-                </span>
+        <div class="footer-bottom">
+            <span>&copy; 2026 ZacPet · Paterna, Valencia, España</span>
+            <div class="footer-bottom-right">
+                <a href="/en/" style="margin-bottom: 0;">English</a>
+                <span style="opacity: 0.5;">·</span>
+                <a href="https://gobizit.ai" target="_blank" rel="noopener">Built by GoBizIT.ai</a>
             </div>
         </div>
     </footer>
 
-    <!-- ====== WHATSAPP ====== -->
-    <a href="mailto:info@zacpet.com" class="whatsapp-float" aria-label="Email">
-        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-    </a>
+    <!-- ============ MOBILE STICKY CTA ============ -->
+    <div class="sticky-cta" id="sticky-cta">
+        Únete al lanzamiento → 10% descuento
+        <button class="sticky-cta-close" onclick="document.getElementById('sticky-cta').style.display='none'">×</button>
+    </div>
 
-    <!-- ====== SCRIPTS ====== -->
+    <!-- ============ SCRIPTS ============ -->
     <script>
-        // Mobile menu close on link click
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('nav').classList.remove('active');
-            });
-        });
-
         // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 30) {
-                header.style.background = 'rgba(255, 248, 240, 0.98)';
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+                header.classList.add('scrolled');
             } else {
-                header.style.background = 'rgba(255, 248, 240, 0.92)';
-                header.style.boxShadow = 'none';
+                header.classList.remove('scrolled');
             }
+        });
+
+        // Mobile nav close on link click
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
         });
 
         // Reveal on scroll
@@ -1370,17 +1207,20 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.15 });
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Newsletter form feedback
-        document.querySelector('.newsletter-form').addEventListener('submit', function() {
-            const btn = this.querySelector('button');
-            btn.textContent = 'Enviando...';
-            btn.disabled = true;
+        // Form submission feedback
+        document.querySelectorAll('.email-form').forEach(form => {
+            form.addEventListener('submit', function() {
+                const btn = this.querySelector('button');
+                btn.textContent = 'Enviando...';
+                btn.disabled = true;
+            });
         });
     </script>
 
@@ -1390,7 +1230,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "ZacPet",
-        "description": "Productos para mascotas con cariño, diseñados en Valencia.",
+        "description": "Accesorios premium para mascotas, diseñados en Valencia.",
         "url": "https://zacpet.com",
         "email": "info@zacpet.com",
         "address": {
