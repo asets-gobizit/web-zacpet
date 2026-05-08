@@ -1,0 +1,70 @@
+
+[Phase G] Watching for SSL certificate...
+  Polling GitHub every 30s (up to 30 min).
+  Press Ctrl+C anytime to skip — you can re-run later.
+
+  [00:00] attempt 1/60 — cert state: none
+  [00:30] attempt 2/60 — cert state: none
+  [01:01] attempt 3/60 — cert state: none
+  [01:31] attempt 4/60 — cert state: none
+  [02:01] attempt 5/60 — cert state: none
+  [02:32] attempt 6/60 — cert state: none
+  [03:02] attempt 7/60 — cert state: none
+  [03:33] attempt 8/60 — cert state: none
+  [04:03] attempt 9/60 — cert state: none
+  [04:34] attempt 10/60 — cert state: none
+  [05:04] attempt 11/60 — cert state: none
+  [05:35] attempt 12/60 — cert state: none
+  [06:05] attempt 13/60 — cert state: none
+  [06:36] attempt 14/60 — cert state: none
+  [07:06] attempt 15/60 — cert state: none
+  [07:37] attempt 16/60 — cert state: none
+  [08:07] attempt 17/60 — cert state: none
+  [08:38] attempt 18/60 — cert state: none
+  [09:08] attempt 19/60 — cert state: none
+  [09:38] attempt 20/60 — cert state: none
+  [10:09] attempt 21/60 — cert state: none
+  [10:39] attempt 22/60 — cert state: none
+  [11:10] attempt 23/60 — cert state: none
+  [11:40] attempt 24/60 — cert state: none
+  [12:11] attempt 25/60 — cert state: none
+  [12:41] attempt 26/60 — cert state: none
+  [13:12] attempt 27/60 — cert state: none
+  [13:42] attempt 28/60 — cert state: none
+  [14:13] attempt 29/60 — cert state: none
+  [14:43] attempt 30/60 — cert state: none
+  [15:14] attempt 31/60 — cert state: none
+  [15:44] attempt 32/60 — cert state: none
+  [16:15] attempt 33/60 — cert state: none
+  [16:45] attempt 34/60 — cert state: none
+  [17:16] attempt 35/60 — cert state: none
+  [17:46] attempt 36/60 — cert state: none
+  [18:17] attempt 37/60 — cert state: none
+  [18:47] attempt 38/60 — cert state: none
+  [19:18] attempt 39/60 — cert state: none
+  [19:48] attempt 40/60 — cert state: none
+  [20:18] attempt 41/60 — cert state: none
+  [20:49] attempt 42/60 — cert state: none
+  [21:19] attempt 43/60 — cert state: none
+  [21:50] attempt 44/60 — cert state: none
+  [22:20] attempt 45/60 — cert state: none
+  [22:51] attempt 46/60 — cert state: none
+  [23:21] attempt 47/60 — cert state: none
+  [23:52] attempt 48/60 — cert state: none
+  [24:22] attempt 49/60 — cert state: none
+  [24:53] attempt 50/60 — cert state: none
+  [25:23] attempt 51/60 — cert state: none
+  [25:54] attempt 52/60 — cert state: none
+  [26:24] attempt 53/60 — cert state: none
+  [26:55] attempt 54/60 — cert state: none
+  [27:25] attempt 55/60 — cert state: none
+  [27:56] attempt 56/60 — cert state: none
+  [28:26] attempt 57/60 — cert state: none
+  [28:57] attempt 58/60 — cert state: none
+  [29:27] attempt 59/60 — cert state: none
+  [29:57] attempt 60/60 — cert state: none
+
+  [TIMEOUT] No cert after 30 min. This is unusual.
+  Check DNS:    https://dnschecker.org/#A/zacpet.com
+  Check Pages:  https://github.com/asets-gobizit/web-zacpet/settings/pages
+  Re-run:       python make_website.py  (skip to Phase G manually)
